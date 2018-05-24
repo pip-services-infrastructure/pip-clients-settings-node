@@ -13,7 +13,7 @@ import { ISettingsClientV1 } from './ISettingsClientV1';
 export class SettingsHttpClientV1 extends CommandableHttpClient implements ISettingsClientV1 {
 
     constructor(config?: any) {
-        super('settings');
+        super('v1/settings');
 
         if (config != null)
             this.configure(ConfigParams.fromValue(config));

@@ -5,7 +5,7 @@ const pip_services_commons_node_1 = require("pip-services-commons-node");
 const pip_services_net_node_1 = require("pip-services-net-node");
 class SettingsHttpClientV1 extends pip_services_net_node_1.CommandableHttpClient {
     constructor(config) {
-        super('settings');
+        super('v1/settings');
         if (config != null)
             this.configure(pip_services_commons_node_1.ConfigParams.fromValue(config));
     }
