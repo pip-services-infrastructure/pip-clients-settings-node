@@ -1,5 +1,5 @@
 import { Descriptor } from 'pip-services-commons-node';
-import { Factory } from 'pip-services-commons-node';
+import { Factory } from 'pip-services-components-node';
 
 import { SettingsNullClientV1 } from '../version1/SettingsNullClientV1';
 import { SettingsDirectClientV1 } from '../version1/SettingsDirectClientV1';

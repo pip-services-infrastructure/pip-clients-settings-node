@@ -4,7 +4,7 @@ import { ConfigParams } from 'pip-services-commons-node';
 import { FilterParams } from 'pip-services-commons-node';
 import { PagingParams} from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
-import { DirectClient } from 'pip-services-net-node';
+import { DirectClient } from 'pip-services-rpc-node';
 
 import { ISettingsClientV1 } from './ISettingsClientV1';
 //import { ISettingsController } from 'pip-services-settings-node';

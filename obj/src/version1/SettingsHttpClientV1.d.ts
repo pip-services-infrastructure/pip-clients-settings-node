@@ -2,7 +2,7 @@ import { ConfigParams } from 'pip-services-commons-node';
 import { FilterParams } from 'pip-services-commons-node';
 import { PagingParams } from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
-import { CommandableHttpClient } from 'pip-services-net-node';
+import { CommandableHttpClient } from 'pip-services-rpc-node';
 import { SettingsSectionV1 } from './SettingsSectionV1';
 import { ISettingsClientV1 } from './ISettingsClientV1';
 export declare class SettingsHttpClientV1 extends CommandableHttpClient implements ISettingsClientV1 {
