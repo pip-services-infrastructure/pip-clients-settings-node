@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
-const pip_services_commons_node_1 = require("pip-services-commons-node");
-const pip_services_rpc_node_1 = require("pip-services-rpc-node");
-class SettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient {
+const pip_services3_commons_node_1 = require("pip-services3-commons-node");
+const pip_services3_rpc_node_1 = require("pip-services3-rpc-node");
+class SettingsHttpClientV1 extends pip_services3_rpc_node_1.CommandableHttpClient {
     constructor(config) {
         super('v1/settings');
         if (config != null)
-            this.configure(pip_services_commons_node_1.ConfigParams.fromValue(config));
+            this.configure(pip_services3_commons_node_1.ConfigParams.fromValue(config));
     }
     getSectionIds(correlationId, filter, paging, callback) {
         this.callCommand('get_section_ids', correlationId, {
@@ -22,7 +22,7 @@ class SettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient
         }, (err, page) => {
             if (page) {
                 page.data = _.map(page.data, (r) => {
-                    r.parameters = pip_services_commons_node_1.ConfigParams.fromValue(r.parameters);
+                    r.parameters = pip_services3_commons_node_1.ConfigParams.fromValue(r.parameters);
                     return r;
                 });
             }
@@ -34,7 +34,7 @@ class SettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient
             id: id
         }, (err, parameters) => {
             if (parameters)
-                parameters = pip_services_commons_node_1.ConfigParams.fromValue(parameters);
+                parameters = pip_services3_commons_node_1.ConfigParams.fromValue(parameters);
             callback(err, parameters);
         });
     }
@@ -44,7 +44,7 @@ class SettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient
             parameters: parameters
         }, (err, parameters) => {
             if (parameters)
-                parameters = pip_services_commons_node_1.ConfigParams.fromValue(parameters);
+                parameters = pip_services3_commons_node_1.ConfigParams.fromValue(parameters);
             if (callback)
                 callback(err, parameters);
         });
@@ -56,7 +56,7 @@ class SettingsHttpClientV1 extends pip_services_rpc_node_1.CommandableHttpClient
             increment_params: incrementParams
         }, (err, parameters) => {
             if (parameters)
-                parameters = pip_services_commons_node_1.ConfigParams.fromValue(parameters);
+                parameters = pip_services3_commons_node_1.ConfigParams.fromValue(parameters);
             if (callback)
                 callback(err, parameters);
         });

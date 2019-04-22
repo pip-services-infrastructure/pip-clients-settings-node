@@ -1,8 +1,8 @@
-import { ConfigParams } from 'pip-services-commons-node';
-import { FilterParams } from 'pip-services-commons-node';
-import { PagingParams } from 'pip-services-commons-node';
-import { DataPage } from 'pip-services-commons-node';
-import { CommandableLambdaClient } from 'pip-services-aws-node';
+import { ConfigParams } from 'pip-services3-commons-node';
+import { FilterParams } from 'pip-services3-commons-node';
+import { PagingParams } from 'pip-services3-commons-node';
+import { DataPage } from 'pip-services3-commons-node';
+import { CommandableLambdaClient } from 'pip-services3-aws-node';
 import { SettingsSectionV1 } from './SettingsSectionV1';
 import { ISettingsClientV1 } from './ISettingsClientV1';
 export declare class SettingsLambdaClientV1 extends CommandableLambdaClient implements ISettingsClientV1 {

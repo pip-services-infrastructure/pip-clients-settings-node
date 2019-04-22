@@ -1,8 +1,8 @@
-import { ConfigParams } from 'pip-services-commons-node';
-import { FilterParams } from 'pip-services-commons-node';
-import { PagingParams } from 'pip-services-commons-node';
-import { DataPage } from 'pip-services-commons-node';
-import { DirectClient } from 'pip-services-rpc-node';
+import { ConfigParams } from 'pip-services3-commons-node';
+import { FilterParams } from 'pip-services3-commons-node';
+import { PagingParams } from 'pip-services3-commons-node';
+import { DataPage } from 'pip-services3-commons-node';
+import { DirectClient } from 'pip-services3-rpc-node';
 import { ISettingsClientV1 } from './ISettingsClientV1';
 import { SettingsSectionV1 } from './SettingsSectionV1';
 export declare class SettingsDirectClientV1 extends DirectClient<any> implements ISettingsClientV1 {
