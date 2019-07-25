@@ -52,8 +52,8 @@ class SettingsHttpClientV1 extends pip_services3_rpc_node_1.CommandableHttpClien
     modifySection(correlationId, id, updateParams, incrementParams, callback) {
         this.callCommand('modify_section', correlationId, {
             id: id,
-            update_params: updateParams,
-            increment_params: incrementParams
+            update_parameters: updateParams,
+            increment_parameters: incrementParams
         }, (err, parameters) => {
             if (parameters)
                 parameters = pip_services3_commons_node_1.ConfigParams.fromValue(parameters);

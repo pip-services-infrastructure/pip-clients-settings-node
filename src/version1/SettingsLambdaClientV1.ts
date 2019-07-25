@@ -93,8 +93,8 @@ export class SettingsLambdaClientV1 extends CommandableLambdaClient implements I
             correlationId,
             {
                 id: id,
-                update_params: updateParams,
-                increment_params: incrementParams
+                update_parameters: updateParams,
+                increment_parameters: incrementParams
             }, 
             (err, parameters) => {
                 if (parameters)

@@ -6,5 +6,7 @@ export declare class SettingsClientFactory extends Factory {
     static DirectClientV1Descriptor: Descriptor;
     static HttpClientV1Descriptor: Descriptor;
     static LambdaClientV1Descriptor: Descriptor;
+    static CommandableGrpcClientV1Descriptor: Descriptor;
+    static GrpcClientV1Descriptor: Descriptor;
     constructor();
 }

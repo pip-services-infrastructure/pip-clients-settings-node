@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
 const pip_services3_commons_node_1 = require("pip-services3-commons-node");
-const pip_services3_aws_node_1 = require("pip-services3-aws-node");
-class SettingsLambdaClientV1 extends pip_services3_aws_node_1.CommandableLambdaClient {
+const pip_services3_grpc_node_1 = require("pip-services3-grpc-node");
+class SettingsCommandableGrpcClientV1 extends pip_services3_grpc_node_1.CommandableGrpcClient {
     constructor(config) {
-        super('settings');
+        super('v1/settings');
         if (config != null)
             this.configure(pip_services3_commons_node_1.ConfigParams.fromValue(config));
     }
@@ -62,5 +62,5 @@ class SettingsLambdaClientV1 extends pip_services3_aws_node_1.CommandableLambdaC
         });
     }
 }
-exports.SettingsLambdaClientV1 = SettingsLambdaClientV1;
-//# sourceMappingURL=SettingsLambdaClientV1.js.map
+exports.SettingsCommandableGrpcClientV1 = SettingsCommandableGrpcClientV1;
+//# sourceMappingURL=SettingsCommandableGrpcClientV1.js.map

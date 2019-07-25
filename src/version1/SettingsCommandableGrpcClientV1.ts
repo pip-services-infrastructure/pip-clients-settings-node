@@ -5,12 +5,12 @@ import { IReferences } from 'pip-services3-commons-node';
 import { FilterParams } from 'pip-services3-commons-node';
 import { PagingParams } from 'pip-services3-commons-node';
 import { DataPage } from 'pip-services3-commons-node';
-import { CommandableHttpClient } from 'pip-services3-rpc-node';
+import { CommandableGrpcClient } from 'pip-services3-grpc-node';
 
 import { SettingsSectionV1 } from './SettingsSectionV1';
 import { ISettingsClientV1 } from './ISettingsClientV1';
 
-export class SettingsHttpClientV1 extends CommandableHttpClient implements ISettingsClientV1 {
+export class SettingsCommandableGrpcClientV1 extends CommandableGrpcClient implements ISettingsClientV1 {
 
     constructor(config?: any) {
         super('v1/settings');
