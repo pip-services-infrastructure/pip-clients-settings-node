@@ -19,6 +19,7 @@ class SettingsClientFactory extends pip_services3_components_node_1.Factory {
         this.registerAsType(SettingsClientFactory.GrpcClientV1Descriptor, SettingsGrpcClientV1_1.SettingsGrpcClientV1);
     }
 }
+exports.SettingsClientFactory = SettingsClientFactory;
 SettingsClientFactory.Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'factory', 'default', 'default', '1.0');
 SettingsClientFactory.NullClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'client', 'null', 'default', '1.0');
 SettingsClientFactory.DirectClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'client', 'direct', 'default', '1.0');
@@ -26,5 +27,4 @@ SettingsClientFactory.HttpClientV1Descriptor = new pip_services3_commons_node_1.
 SettingsClientFactory.LambdaClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'client', 'lambda', 'default', '1.0');
 SettingsClientFactory.CommandableGrpcClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'client', 'commandable-grpc', 'default', '1.0');
 SettingsClientFactory.GrpcClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-settings', 'client', 'grpc', 'default', '1.0');
-exports.SettingsClientFactory = SettingsClientFactory;
 //# sourceMappingURL=SettingsClientFactory.js.map
